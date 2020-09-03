@@ -1,2 +1,3 @@
+include ':SpeedTestLibrary'
 include ':app'
 rootProject.name='Speedtest-Android'

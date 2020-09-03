@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
@@ -256,6 +257,7 @@ public class MainActivity extends Activity {
         st.setSelectedServer(selected);
         ((TextView)findViewById(R.id.serverName)).setText(selected.getName());
         ((TextView)findViewById(R.id.dlText)).setText(format(0));
+        Log.d("hello", "page_test: "+format(0));
         ((TextView)findViewById(R.id.ulText)).setText(format(0));
         ((TextView)findViewById(R.id.pingText)).setText(format(0));
         ((TextView)findViewById(R.id.jitterText)).setText(format(0));
